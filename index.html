@@ -22,7 +22,7 @@
 
   <body>
     <h1>Juego Adivina tu número</h1>
-    <p>Hemos seleccionado un número aleatorio entre 1 y 100. Trata de adivinarlo en 5 intentos. Te diremos si el número es más alto o más bajo.</p>
+    <p>Hemos seleccionado un número aleatorio entre 1 y 100. Trata de adivinarlo en 10 intentos. Te diremos si el número es más alto o más bajo.</p>
 
     <div class="form">
       <label for="guessField">Ingresa el número a adivinar: </label>
@@ -39,7 +39,7 @@
     <script>
       let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-      const ATTEMPTS = 5;
+      const ATTEMPTS = 10;  // Cambiado a 10 intentos
       const guesses = document.querySelector('.guesses');
       const lastResult = document.querySelector('.lastResult');
       const lowOrHi = document.querySelector('.lowOrHi');
